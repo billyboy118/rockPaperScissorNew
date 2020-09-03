@@ -7,31 +7,186 @@ h1 {
     font-size: 80px; 
     font-weight: bold; 
     letter-spacing: -1px; 
-    text-align: center; 
+    text-align: center;   
+    margin-bottom: 10px; 
+    margin-top: 20px; 
+}
+/*#winLoss{
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 80px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    text-align: center;   
+    margin-bottom: 0px; 
+    margin-top: 10px
+}
+*/
 
+
+
+.winLoss1 {
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 40px; 
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    text-align: center;
+    line-height: 50px;
+
+
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 15s;
+    margin-bottom: 5px;
+    margin-top: 5px;
     
+}
+  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:100%; top:0px;}
+    50%  {background-color:blue; left:200px; top:00px;}
+    75%  {background-color:green; left:0px; top:00px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+.names{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 30px;
+    
+}
+#n3 {
+    padding-left: 75px;
+    padding-right: 75px;
 }
 
 .activePlay {
-    
     display: flex;
-    justify-content: space-evenly;
-
+    justify-content: space-evenly; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px; 
     
 }
-
 .plays {
-    margin-top: 30px;
     height: 150px;
     width: 150px;
     background-size: large;
     background-color: aqua;
     color: white;
+    text-align: center;
+    line-height: 150px;   
 }
-
 #vs {
     color: white;
     font-size: 100px;
-    margin-top: 20px;
+    margin-top: 40px;
+}
 
+
+#player{
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+#computer{
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+#scores {
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 40px;
+    margin-top: 40px;
+
+}
+#rounds {
+    line-height: 5px;
+}
+
+#games {
+    line-height: 5px;
+    margin-left: px;
+    margin-right: 10px;   
+}
+.scoresC {
+    
+    height: 70px;
+    width: 70px;
+    background-size: large;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}
+.roundC {
+    margin-top:20px; 
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 25px;
+}
+.roundD {
+    margin-top:10px ;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 25px;
+}
+#PS{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(126, 26, 26); 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 40px;
+    margin-bottom: 0;
+
+}
+.playerSelection {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 20px;
+}
+.rps {
+    margin-left: 5px;
+    scroll-margin-right: 5px;
+    height: 150px;
+    width: 150px;
+    background-size: large;
+    background-color: aqua;
+    color: white;
+    text-align: center;
+    line-height: 150px;
+} 
+#rock {
+    background-image: url("rock-md.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+#paper {
+    background-image: url("paper-md.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#scissors {
+    background-image: url("scissors-md.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
