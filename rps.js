@@ -97,11 +97,13 @@ function rockPaperScissor(userChoice, compChoice){
 
     if(player1 == 5){
         playerScore.textContent = 0;
+        computerScore.textContent = 0;
         player1 = 0;
         comp = 0;
         playerRounds++;
     }else if (comp == 5){
         computerScore.textContent = 0;
+        playerScore.textContent = 0;
         player1 = 0;
         comp = 0;
         compRounds++;
