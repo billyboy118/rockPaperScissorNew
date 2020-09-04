@@ -26,7 +26,7 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 3000);
+            } , 1500);
                  
         }
         if (userChoice == "rock" && compChoice == "scissors") {
@@ -36,7 +36,7 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 3000);   
+            } , 1500);   
             
             
         }
@@ -47,7 +47,7 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 4000);   
+            } , 1500);   
         }
         if (userChoice == "paper" && compChoice == "scissors") {
             //alert("Loser");
@@ -56,7 +56,7 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 4000);
+            } , 1500);
         }
         if (userChoice == "scissors" && compChoice == "paper"){
             //alert("Winner");
@@ -65,7 +65,7 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 4000)
+            } , 1500)
             
         } 
         if (userChoice == "scissors" && compChoice == "rock"){
@@ -75,14 +75,14 @@ function rockPaperScissor(userChoice, compChoice){
             winLoss.classList.add("winLoss1");
             setTimeout( function() {
                 winLoss.classList.remove("winLoss1")
-            } , 4000);
+            } , 1500);
         }
         if (userChoice == compChoice) { //alert("draw"); 
         winLoss.textContent = "Draw";
         winLoss.classList.add("winLoss1");
         setTimeout( function() {
             winLoss.classList.remove("winLoss1")
-        } , 4000);
+        } , 1500);
     }
     
     //}
@@ -132,54 +132,92 @@ const scissorsbtn = document.querySelector("#scissors");
 
 
 rockbtn.addEventListener("click", function (v) {
-     v.target; player.style.backgroundImage = 'url("rock-md.png")';
+    
+    v.target; player.style.backgroundImage = 'url("black.jpg")';
+    setTimeout (function () {
+        v.target; player.style.backgroundImage = 'url("rock-md.png")'
+    },100);
      let rps = ["rock","paper","scissors"];
      let compChoice = rps[Math.floor(Math.random()*rps.length)];
      let userChoice = "rock";
 
 
 
-     if (compChoice == "rock"){
-        computer.style.backgroundImage = 'url("rock-md.png")';
+    if (compChoice == "rock"){
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("rock-md.png")'
+        },100);
     }else if (compChoice == "paper"){
-        computer.style.backgroundImage = 'url("paper-md.png")';
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("paper-md.png")'
+        },100);
     }else if (compChoice == "scissors") {
-        computer.style.backgroundImage = 'url("scissors-md.png")';
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("scissors-md.png")'
+        },100);
     }else{
     }
+    
     return rockPaperScissor (userChoice, compChoice);
      
 });
 paperbtn.addEventListener("click", function (v) {
-    v.target; player.style.backgroundImage = 'url("paper-md.png")';
+    v.target; player.style.backgroundImage = 'url("black.jpg")';
+    setTimeout (function () {
+        v.target; player.style.backgroundImage = 'url("paper-md.png")'
+    },100);
     let userChoice = "paper";
     let rps = ["rock","paper","scissors"];
     let compChoice = rps[Math.floor(Math.random()*rps.length)];
     
     if (compChoice == "rock"){
-       computer.style.backgroundImage = 'url("rock-md.png")';
-   }else if (compChoice == "paper"){
-       computer.style.backgroundImage = 'url("paper-md.png")';
-   }else if (compChoice == "scissors") {
-       computer.style.backgroundImage = 'url("scissors-md.png")';
-   }else{
-   }
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("rock-md.png")'
+        },100);
+    }else if (compChoice == "paper"){
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("paper-md.png")'
+        },100);
+    }else if (compChoice == "scissors") {
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("scissors-md.png")'
+        },100);
+    }else{
+    }
    return rockPaperScissor (userChoice, compChoice);
 
 });
 scissorsbtn.addEventListener("click", function (v) {
-    v.target; player.style.backgroundImage = 'url("scissors-md.png")';
+    v.target; player.style.backgroundImage = 'url("black.jpg")';
+    setTimeout (function () {
+        v.target; player.style.backgroundImage = 'url("scissors-md.png")'
+    },100);
     let userChoice = "scissors";
     let rps = ["rock","paper","scissors"];
     let compChoice = rps[Math.floor(Math.random()*rps.length)];
     
     if (compChoice == "rock"){
-       computer.style.backgroundImage = 'url("rock-md.png")';
-   }else if (compChoice == "paper"){
-       computer.style.backgroundImage = 'url("paper-md.png")';
-   }else if (compChoice == "scissors") {
-       computer.style.backgroundImage = 'url("scissors-md.png")';
-   }else{
-   }
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("rock-md.png")'
+        },100);
+    }else if (compChoice == "paper"){
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("paper-md.png")'
+        },100);
+    }else if (compChoice == "scissors") {
+        computer.style.backgroundImage = 'url("black.jpg")';
+        setTimeout (function () {
+            v.target; computer.style.backgroundImage = 'url("scissors-md.png")'
+        },100);
+    }else{
+    }
    return rockPaperScissor (userChoice, compChoice);
 });
