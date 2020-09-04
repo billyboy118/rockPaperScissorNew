@@ -1,7 +1,7 @@
 body {
     background-image: url("bg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    
+    
     
 }
 h1 {
@@ -46,13 +46,13 @@ h1 {
     animation-duration: 15s;
     margin-bottom: 5px;
     margin-top: 5px;
-    margin-left: 52rem;
+    margin-left: 25%;
 }
   
 @keyframes example {
     0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:1000px; top:0px;}
-    50%  {background-color:blue; left:200px; top:00px;}
+    25%  {background-color:yellow; left:60%; top:0px;}
+    50%  {background-color:blue; left:0px; top:00px;}
     75%  {background-color:green; left:0px; top:00px;}
     100% {background-color:red; left:0px; top:0px;}
 }
@@ -159,11 +159,11 @@ h1 {
 
 }
 .playerSelection {
-    margin-top: 0px;
+    margin-top: 5px;
     display: flex;
     justify-content: center; 
     font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 20px;
+    font-size: 25px;
 }
 .rps {
     margin-left: 5px;
@@ -175,13 +175,8 @@ h1 {
     color: white;
     text-align: center;
     line-height: 150px;
-    border-image-width: 20px;
-
-    /*border: 2px solid #dadada;
-    border-radius: 7px;
-    outline: none;
-    border-color: #9ecaed;
-    box-shadow: 0 0 10px #9ecaed;*/
+    border: 3px solid #666;
+    
 } 
 #rock {
     background-image: url("rock-md.png");
@@ -197,4 +192,12 @@ h1 {
     background-image: url("scissors-md.png");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+#select {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 25px; 
+    color: rgb(126, 26, 26); 
 }
